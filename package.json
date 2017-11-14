@@ -1,0 +1,57 @@
+{
+  "name": "@pressbooks/pressbooks-luther",
+  "description": "Named after Martin Luther, this is a traditional book theme, good for novels, and text-heavy non-fiction. An earlier version of this theme was commissioned by Fortress Press / Augsburg Fortress.",
+  "author": "Pressbooks (Book Oven Inc.)",
+  "engines": {
+    "node": ">= 6.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pressbooks/pressbooks-luther.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint": "^7.12.0",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "scripts": {},
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "indentation": 2,
+      "media-feature-name-no-unknown": [
+        true,
+        {
+          "ignoreMediaFeatureNames": [
+            "min--moz-device-pixel-ratio"
+          ]
+        }
+      ],
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "footnote-style-position",
+            "hyphenate-before",
+            "hyphenate-after",
+            "hyphenate-lines",
+            "margin-inside",
+            "margin-outside",
+            "prince-bookmark-level",
+            "prince-footnote-policy",
+            "prince-image-resolution",
+            "prince-page-group"
+          ]
+        }
+      ],
+      "selector-pseudo-element-no-unknown": [
+        true,
+        {
+          "ignorePseudoElements": [
+            "footnote-call"
+          ]
+        }
+      ]
+    }
+  }
+}
