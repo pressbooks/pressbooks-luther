@@ -1,6 +1,7 @@
 {
   "name": "@pressbooks/pressbooks-luther",
-  "version": "1.8.1",
+  "version": "1.8.2",
+  "license": "GPL-2.0-or-later",
   "description": "Named after Martin Luther, this is a traditional book theme, good for novels, and text-heavy non-fiction. An earlier version of this theme was commissioned by Fortress Press / Augsburg Fortress.",
   "author": "Pressbooks (Book Oven Inc.)",
   "engines": {
