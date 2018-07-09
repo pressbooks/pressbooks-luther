@@ -204,7 +204,7 @@ div.part.invisible {
 }
 
 div.part-title-wrap > h3.part-number::before {
-  content: $part " ";
+  content: '#{$part} ';
 }
 
 .chapter-number {
