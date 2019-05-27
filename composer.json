@@ -3,10 +3,10 @@
     "description": "Named after Martin Luther, this is a traditional book theme, good for novels, and text-heavy non-fiction. An earlier version of this theme was commissioned by Fortress Press / Augsburg Fortress.",
     "type": "wordpress-theme",
     "require": {
-        "composer/installers": "^1.2"
+        "composer/installers": "^1.6"
     },
     "require-dev": {
-        "humanmade/coding-standards": "^0.2.1"
+        "pressbooks/coding-standards": "^1.0"
     },
     "license": "GPL-3.0-or-later",
     "authors": [
