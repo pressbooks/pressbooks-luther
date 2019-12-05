@@ -5,20 +5,20 @@
   "description": "Named after Martin Luther, this is a traditional book theme, good for novels, and text-heavy non-fiction. An earlier version of this theme was commissioned by Fortress Press / Augsburg Fortress.",
   "author": "Pressbooks (Book Oven Inc.)",
   "engines": {
-    "node": ">= 6.9.4"
+    "node": ">= 10"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pressbooks/pressbooks-luther.git"
   },
   "dependencies": {},
-  "devDependencies": {
-    "pressbooks-build-tools": "^1.4.3"
-  },
+  "devDependencies": {},
   "scripts": {
-    "lint": "npm run -s lint:scripts && npm run -s lint:styles",
-    "lint:scripts": "cross-env NODE_ENV=development node_modules/eslint/bin/eslint.js \"export/**/*.js\"",
-    "lint:styles": "cross-env NODE_ENV=development node_modules/stylelint/bin/stylelint.js \"*.scss\" \"export/**/*.scss\" --syntax scss",
+    "install-build-tools": "npm install --no-save pressbooks-build-tools",
+    "fix": "npm run -s fix:styles",
+    "fix:styles": "cross-env NODE_ENV=development node_modules/stylelint/bin/stylelint.js --fix \"export/**/*.scss\" --syntax scss",
+    "lint": "npm run -s lint:styles",
+    "lint:styles": "cross-env NODE_ENV=development node_modules/stylelint/bin/stylelint.js  \"export/**/*.scss\" --syntax scss",
     "test": "npm run -s lint"
   },
   "eslintConfig": {
