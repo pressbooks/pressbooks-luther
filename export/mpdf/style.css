@@ -239,7 +239,7 @@ div.front-matter .entry-title,
 div.chapter .entry-title,
 div.back-matter .entry-title,
 div.part .entry-title,
-h1.toc {
+.toc {
 	font-size: 1.5em;
 	margin-bottom: 2.5cm;
 	font-style: normal;
@@ -248,26 +248,26 @@ h1.toc {
 /* MOAR TRADITIONAL CSS
 ================== */
 
-.display-none, h3.front-matter-number, h3.back-matter-number {
+.display-none, .front-matter-number, .back-matter-number {
 	display: none;
 }
 
-h3.part-number, h3.chapter-number {
+.part-number, .chapter-number {
 	padding-bottom: 1em;
 	text-transform: uppercase;
 }
 
-h3.part-number::before {
+.part-number::before {
 	content: $part " ";
 	text-transform: uppercase;
 }
-h3.chapter-number {
+.chapter-number {
 	font-weight: lighter;
 	display: inline-block;
 	padding: 0 2em 0 2em;
 	text-align: center;
 }
-div.chapter.numberless h3.chapter-number {
+div.chapter.numberless .chapter-number {
 	display: none;
 }
 .aphorism {
@@ -315,26 +315,6 @@ div.chapter.numberless h3.chapter-number {
 	font-weight: bold;
 	margin: 0;
 }
-
-/*h2.chapter-subtitle {
-	font-weight: normal;
-	font-style: italic;
-}
-h2.chapter-subtitle,
-h2.chapter-author {
-	font-size: 1.4em;
-	font-variant: normal;
-	margin: -1.4em 0 3em;
-}
-h2.chapter-subtitle {
-	margin-bottom: 2.8em;
-	padding-top: 0.5em;
-}
-h2.chapter-author {
-	font-size: 0.9em;
-	font-style: normal;
-	font-weight: 600;
-}*/
 .pullquote {
 	border: 1px solid #000;
 	border-width: 1px 0;

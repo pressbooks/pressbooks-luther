@@ -203,7 +203,7 @@ div.part.invisible {
   text-transform: uppercase;
 }
 
-div.part-title-wrap > h3.part-number::before {
+div.part-title-wrap > .part-number::before {
   content: '#{$part} ';
 }
 
@@ -211,7 +211,7 @@ div.part-title-wrap > h3.part-number::before {
   margin-bottom: 3em;
 }
 
-div.chapter.numberless h3.chapter-number {
+div.chapter.numberless .chapter-number {
   display: none;
 }
 
@@ -219,7 +219,7 @@ div.chapter.numberless h3.chapter-number {
   margin-bottom: 3em;
 }
 
-.front-matter.preface h1.front-matter-title {
+.front-matter.preface .front-matter-title {
   font-size: 1.4em;
 }
 
@@ -359,24 +359,24 @@ span.chapter-author + span.chapter-license {
 
 /* SUBTITLES, CHAPTER AUTHOR & APHORIMS
 ======================================== */
-h2.chapter-subtitle {
+.chapter-subtitle {
   font-weight: normal;
   font-style: italic;
 }
 
-h2.chapter-subtitle,
-h2.chapter-author {
+.chapter-subtitle,
+.chapter-author {
   font-size: 1.4em;
   font-variant: normal;
   margin: -1.4em 0 3em;
 }
 
-h2.chapter-subtitle {
+.chapter-subtitle {
   margin-bottom: 2.8em;
   padding-top: 0.5em;
 }
 
-h2.chapter-author {
+.chapter-author {
   font-size: 0.9em;
   font-style: normal;
   font-weight: 600;
